@@ -22,7 +22,9 @@
           <p>
             {{ project.description }}
           </p>
-          <!-- <p><a href="http://google.com">Más información</a></p> -->
+          {% if project.link %}
+            <p><a href="{{porject.link}}">Más información</a></p>
+          {%endif%}
         </div>
       </div>
     {% endfor %}
